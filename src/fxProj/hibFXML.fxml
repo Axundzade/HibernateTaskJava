@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxProj.Controller">
+   <children>
+      <TableView fx:id="TableV" editable="true" layoutX="186.0" prefHeight="200.0" prefWidth="214.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+        <columns>
+          <TableColumn fx:id="IdC" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="NameC" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="ConC" prefWidth="75.0" text="Continent" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <JFXButton fx:id="ReloadB" layoutX="14.0" layoutY="411.0" onAction="#reloadA" prefWidth="60.0" style="-fx-background-color: #3232AA;" text="Reload" textFill="WHITE" AnchorPane.leftAnchor="14.0" />
+      <JFXButton fx:id="InsertB" layoutX="84.0" layoutY="411.0" onAction="#insertA" prefWidth="60.0" style="-fx-background-color: #3232AA;" text="Insert" textFill="WHITE" AnchorPane.leftAnchor="84.0" />
+      <JFXButton fx:id="UpdateB" layoutX="154.0" layoutY="411.0" onAction="#updateA" prefWidth="60.0" style="-fx-background-color: #3232AA;" text="Update" textFill="WHITE" AnchorPane.leftAnchor="154.0" />
+      <JFXButton fx:id="DeleteB" layoutX="224.0" layoutY="411.0" onAction="#deleteA" prefWidth="60.0" ripplerFill="#975c5c" style="-fx-background-color: #3232AA;" text="Delete" textFill="WHITE" AnchorPane.leftAnchor="224.0" />
+      <TextField fx:id="TextId" layoutX="14.0" layoutY="14.0" promptText="Id" />
+      <TextField fx:id="TextName" layoutX="180.0" layoutY="14.0" promptText="Name" />
+      <TextField fx:id="TextCont" layoutX="346.0" layoutY="14.0" promptText="Continent" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,10 @@
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/orm/hbm">
+    <class name="fxProj.CountryHibernate" table="country">
+        <id name="ID" type="int" column="ID">
+
+        </id>
+        <property name="Name" column="Name" type="java.lang.String"/>
+        <property name="Continent" column="Continent" type="java.lang.String"/>
+
+    </class>
+</hibernate-mapping>
